@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.w25{
+    width: 25%;
+    overflow: hidden;
+}
+
+.commons-position{
+    position: relative;
+}
+
+/* 공통(commons) css*/
+
+.d-row {
+    display: flex;
+}
+
+.zoom-img{
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all .3s;
+}
+
+.bg-01{
+    background-image: url('../images/img01.jpg');
+}
+
+.bg-02 {
+    background-image: url('../images/img02.jpg');
+}
+
+.bg-03 {
+    background-image: url('../images/img03.jpg');
+}
+
+.bg-04 {
+    background-image: url('../images/img04.jpg');
+}
+
+.text-area {
+    position: absolute;
+    z-index: 99;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255,255,255,0.7);
+    cursor: pointer;
+}

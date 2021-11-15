@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>modal</title>
+
+    <style>
+        .bg {
+            width: 100px;
+            height: 100px;
+            background-color: lavender;
+        }
+        
+        .modal-pop {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            background-color: rgba(0,0,0,0.3);
+            display: none;
+            padding: 100px 0;
+        }
+
+        .cl {
+            font-size: 3rem;
+            color: #fff;
+            cursor: pointer;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="wrap">
+        <div class="bg">
+            <h1>클릭</h1>
+        </div>
+    </div>
+
+    <div class="modal-pop">
+        <iframe width="1195" height="672" src="https://www.youtube.com/embed/s5JPZZ-AlSY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <span class="cl"> X </span>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js">
+    </script>
+
+    <script>
+        $('.bg').click(function(){
+            $('.modal-pop').fadeIn();
+        })
+        $('.cl').click(function(){
+            $('.modal-pop').fadeOut();
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slick</title>
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .slider {
+            position: relative;
+            width: 100%;
+        }
+
+        .slider-bg p {
+            position: absolute;
+            top: 0;
+            color: #fff;
+        }
+
+        .bg1 {
+            background: url('images/img01.jpg');
+        }
+        .bg2 {
+            background: url('images/img02.jpg');
+        }
+        .bg3 {
+            background: url('images/img03.jpg');
+        }
+        .bg4 {
+            background: url('images/img04.jpg');
+        }
+        .bg5 {
+            background: url('images/img05.jpg');
+        }
+        
+        .slider-bg{
+            height: 500px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body>
+    <div class="slider">
+        <div class="slider-bg bg1">
+            <p>슬라이더 이미지 입니다.</p>
+        </div>
+        <div class="slider-bg bg2">
+            <p>슬라이더 이미지 입니다.</p>
+        </div>
+        <div class="slider-bg bg3">
+            <p>슬라이더 이미지 입니다.</p>
+        </div>
+        <div class="slider-bg bg4">
+            <p>슬라이더 이미지 입니다.</p>
+        </div>
+        <div class="slider-bg bg5">
+            <p>슬라이더 이미지 입니다.</p>
+        </div>
+    </div>
+    <div class="slider2">
+        <div class="slider-bg bg1">
+            <p>슬라이더 이미지 입니다.</p>
+        </div>
+        <div class="slider-bg bg2">
+            <p>슬라이더 이미지 입니다.</p>
+        </div>
+        <div class="slider-bg bg3">
+            <p>슬라이더 이미지 입니다.</p>
+        </div>
+        <div class="slider-bg bg4">
+            <p>슬라이더 이미지 입니다.</p>
+        </div>
+        <div class="slider-bg bg5">
+            <p>슬라이더 이미지 입니다.</p>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js">
+    </script>
+    <script>
+        $('.slider').slick({
+            dots: true,
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 1
+        });
+        $('.slider2').slick({
+            dots: true,
+            infinite: true,
+            slidesToShow: 2,
+            slidesToScroll: 2
+        });
+    </script>
+
+</body>
+</html>

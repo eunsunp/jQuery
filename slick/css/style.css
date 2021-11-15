@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.bg {
+    width: 100%;
+    height: 600px;
+}
+
+.bg01 {
+    background-color: aquamarine;
+}
+
+.bg02 {
+    background-color: blanchedalmond;
+}
+
+.bg03 {
+    background-color: lightsteelblue;
+}
+
+.bg04 {
+    background-color: lightpink;
+}
+
+.bg05 {
+    background-color: lightskyblue;
+}
+
+.content-slider {
+    position: relative;
+}
+
+.content-slider .slick-prev {
+    position: absolute;
+    left: 3%;
+    top: 50%;
+    z-index: 99;
+    font-size: 0;
+    background-color: rgb(209, 209, 209);
+    color: #fff;
+    cursor: pointer;
+    border-radius: 100%;
+    border: 0;
+    text-align: center;
+    padding: 10px;
+}
+
+.content-slider .slick-prev::after {
+    content: "\e93b";
+    font-family: "xeicon";
+    font-size: 3rem;
+}
+
+.content-slider .slick-next {
+    position: absolute;
+    top: 50%;
+    right: 3%;
+    z-index: 99;
+    font-size: 0;
+    background-color: rgb(209, 209, 209);
+    color: #fff;
+    cursor: pointer;
+    border-radius: 100%;
+    border: 0;
+    text-align: center;
+    padding: 10px;
+}
+
+.content-slider .slick-next::after {
+    content: "\e93e";
+    font-family: "xeicon";
+    font-size: 3rem;
+}
